@@ -1,13 +1,13 @@
 // This class uses a FixDebugBox class to instantiate two Box objects
-public class FixDebugFour3
+public class DebugFour3
 {
    public static void main(String args[])
    {
-      int width = 12,
-      length = 10,
-      height = 8;
-      FixDebugBox box1 = new FixDebugBox();
-      FixDebugBox box2 = new FixDebugBox(width, length, height);
+      int width = 12;
+      int length = 10;
+      int height = 8;
+      DebugBox box1 = new DebugBox(width, length, height);
+      DebugBox box2 = new DebugBox(width, length, height);
       System.out.println("The dimensions of the first box are");
       box1.showData();
       System.out.print("  The volume of the first box is ");
@@ -17,7 +17,7 @@ public class FixDebugFour3
       System.out.print("  The volume of the second box is ");
       showVolume(box2);
    }
-   public static void showVolume(FixDebugBox aBox)
+   public static void showVolume(DebugBox aBox)
    {
       double vol = aBox.getVolume();
       System.out.println(vol);
